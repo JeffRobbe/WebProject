@@ -5,12 +5,11 @@ var app = new Vue({
     logged: false,
     selectedItem: {},
     currentUser: {
-      firstName: 'Jean-François',
-      lastName: 'Robbe',
+      firstName: '',
+      lastName: '',
       email: '',
       phoneNb: '' },
     cart: [],
-    comment: [],
 		categories: [{	
 			name: 'Men',
 			products: [{
@@ -67,19 +66,21 @@ var app = new Vue({
 			phoneNb: '+33 7 81 06 98 09',
       email: 'robbe@et.esiea.fr',
 			link: 'https://www.linkedin.com/in/robbe-jean-françois-3b660776'
-		}]
-	},
-  
+		}],
+  },
   methods: {
-    addToCar: function(product) {
+    addToCart: function(product) {
       this.cart.push(product);
     },
     remove: function(product) {
       this.cart.splice(this.cart.indexOf(product),1);
     },
-    totaddComment: function(comment){
-     this.comment.push(comment);
-    },
-    
+    totalCart: function() {
+      var total=0;
+      for(var i=0;i<this.cart.length;i++) {
+        total=total+parseFloat(this.cart[i].price);
+      }
+      return total;
+    }
   }
 });

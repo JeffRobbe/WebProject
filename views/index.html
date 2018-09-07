@@ -134,15 +134,13 @@
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email">
-              </div>
-              <div class="form-group">
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-              </div>
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
               </div>
               <button type="button" class="btn btn-default">Submit</button>
+                </div>
             </form>
           </div>
 				</div>
@@ -157,13 +155,13 @@
             <h2>{{selectedItem.name}}</h2>
             <p class="description">{{selectedItem.description}}</p>
             <p class="price">{{selectedItem.price}} $</p>
-            <button type="button" class="btn add" v-on:click="addToCar(selectedItem)">Add to cart</button>
+            <button type="button" class="btn add" v-on:click="addToCart(selectedItem)">Add to cart</button>
             <div class="input-group">
-								<input type="text" class="form-control" placeholder="Comment" name="add">
-								<div class="input-group-btn">
-                  <button class="form-control add" v-on:click="addToComment(Comment)" type="submit">Add comment</button>
-								</div>
-							</div>
+              <input type="text" class="form-control" placeholder="Comment" name="add">
+              <div class="input-group-btn">
+                <button class="form-control" v-on:click="addComment()" type="submit">Add comment</button>
+              </div>
+            </div>
           </div>
 				</div>
 			</main>
