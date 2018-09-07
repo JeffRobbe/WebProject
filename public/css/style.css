@@ -1,0 +1,234 @@
+.jumbotron {
+	height: 50px;
+	margin: 0;
+	padding: 8px;
+	background-color: #222;
+	color: white;
+}
+
+#header {
+	color: white;
+}
+
+.navbar {
+  border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+.navbar li {
+	margin: 0 10px 0 10px;
+}
+
+#logo {
+  margin: 15px;
+  height: 60px;
+  width: auto;
+}
+
+#menu {
+  margin: 0 48px 0 48px;
+}
+
+.view {
+	margin-top: 140px;
+	background-color: #EEE;
+}
+
+.container {
+	max-width: 1000px;
+}
+
+.gallery {
+	margin: 8px 2px;
+	padding: 0;
+	border: 1px solid #222;
+	background-color: #888;
+	color: white;
+	width: 100%;
+}
+
+.gallery-img {
+	display: block;
+	width: auto;
+	height: 200px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.category {
+	line-height: 220px;
+	height: 220px;
+	text-align: center;
+}
+
+.category h2 {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.prods:hover .overlay {
+	opacity: 0.7;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #222;
+}
+
+.prod-name {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.prod-link {
+  display: block;
+}
+
+footer {
+	background-color: #222;
+	color: white;
+}
+
+footer li {
+  display: inline-block;
+}
+
+#logoEsiea {
+  height: 80px;
+  width: auto;
+}
+
+.panel-primary {
+  max-width: 1000px;
+  margin-top: 100px;
+  margin-right: auto; 
+  margin-left: auto;
+}
+
+#email {
+  max-width: 500px;
+  margin: auto;
+}
+
+#pwd {
+  max-width: 500px;
+  margin: auto;
+}
+
+.img-responsive {
+  margin: 10px 0;
+  background-color: #aaa;
+  border: 1px solid black;
+}
+
+.description {
+  text-align: justify;
+  margin: 20px;
+}
+
+.price {
+  text-align: right;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.add {
+  width: 100%;
+  height: 48px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: #888;
+	color: white;
+}
+
+.add:hover {
+  background-color: #aaa;
+  border: 1px solid #333;
+}
+
+.cart-col {
+	line-height: 120px;
+	height: 120px;
+	text-align: center;
+  border-top: 1px solid black;
+}
+
+.cart-img {
+	display: block;
+	width: auto;
+  height: 100px;
+  margin: 10px auto;
+  background-color: #ccc;
+  border-radius: 5%;
+}
+
+.cart-name, .cart-price {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cart-rmv {
+  padding: 5px 0;
+  margin: 42px 0;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color: #555;
+	color: white;
+}
+
+.cart-rmv:hover {
+  background-color: #ccc;
+  border: 1px solid #333;
+}
+
+#purchase {
+  float: right;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: #ccc;
+	color: #555;
+}
+
+.total-left {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: inline;
+}
+
+.total-right {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: inline;
+}
+
+.total {
+  position: relative;
+  min-height: 65px;
+}
